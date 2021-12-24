@@ -1,10 +1,13 @@
 import React from "react";
 import {View,Text, StyleSheet} from 'react-native';
+import Headline from "./components/Headline";
 
 const App = () => {
   return(
     <View style={styles.container}>
-      <Text style={styles.text}> ToDoApp</Text>
+      <Headline/>
+      
+
     </View>
   )
 };
@@ -16,9 +19,5 @@ const styles = StyleSheet.create({
     backgroundColor:'wheat',
     flex:1,
   },
-  text:{
-    color:'firebrick',
-    fontSize:25,
-    fontWeight:'bold',
-  },
-})
+ 
+});

@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 10,
     margin: 10,
+    borderWidth:1,
   },
   button_text: {
     fontWeight: 'bold',
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
         width: Dimensions.get('window').width / 1.5,
         backgroundColor:'white',
         borderRadius:10,
+        borderWidth:1,
         
 
     },

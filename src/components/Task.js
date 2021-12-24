@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Dimensions,
+  TextInput
 } from 'react-native';
 
 const Task = () => {
@@ -13,20 +14,27 @@ const Task = () => {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.button_text}>Add Task</Text>
       </TouchableOpacity>
+    <View>
+        <TextInput style={styles.task} placeholder='Add Task...'/>
+
     </View>
+    </View>
+
   );
 };
 export default Task;
 
 const styles = StyleSheet.create({
   container: {
-    height: Dimensions.get('window').height / 7,
+    height: Dimensions.get('window').height / 6,
     width: Dimensions.get('window').width,
     backgroundColor: 'palegreen',
     alignItems: 'center',
+    
+    
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: 'green',
     width: Dimensions.get('window').width / 1.5,
     alignItems: 'center',
     justifyContent: 'center',
@@ -36,6 +44,17 @@ const styles = StyleSheet.create({
   button_text: {
     fontWeight: 'bold',
     fontSize: 20,
-    color: 'limegreen',
+    color: 'white',
   },
+    task:{
+        height:40,
+        width: Dimensions.get('window').width / 1.5,
+        backgroundColor:'white',
+        borderRadius:10,
+        
+
+    },
+
+
+  
 });

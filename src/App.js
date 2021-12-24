@@ -1,52 +1,24 @@
-import React, {useState} from "react";
-import {View, Text, StyleSheet, Flatlist} from 'react-native';
-import ToDoInput from "./components/ToDo/ToDoInput";
-
-
-
+import React from "react";
+import {View,Text, StyleSheet} from 'react-native';
 
 const App = () => {
-  // const [list, setList] = useState( [
-    
-  //   {text:'Take a shower', key: '1' },
-  //   {text:'have a breakfeast', key: '2' }, 
-  //   {text:'check your mails', key: '3' },
-
-  // ]);
-  // const renderList = ({item}) => <Text list={item}/>
-  return (
+  return(
     <View style={styles.container}>
-      <View style={styles.headline_container}>
-      <Text style={styles.headline}>ToDoApp</Text>
-      {/* <Flatlist
-      data={list}
-      renderItem={renderList}
-      // keyExtrator={item => item.key.toString()}
-    /> */}
-
-      </View>
-    <ToDoInput/>
+      <Text style={styles.text}> ToDoApp</Text>
     </View>
-  );
+  )
 };
 
 export default App;
 
 const styles = StyleSheet.create({
   container:{
-    flex:1,
     backgroundColor:'wheat',
+    flex:1,
   },
-  headline:{
-    color:'darkblue',
-    fontSize:40,
+  text:{
+    color:'firebrick',
+    fontSize:25,
     fontWeight:'bold',
-    
-  },
-  headline_container:{
-    alignItems:'center',
-    backgroundColor:'cornsilk',
-    
   },
 })
-
